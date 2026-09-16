@@ -1,0 +1,9 @@
+/* Pagefind 搜索框宽度跟随导航栏 */
+#__pagefind .pagefind-ui__result-title {
+  font-size: 15px;
+}
+
+#__pagefind mark {
+  background: var(--vp-c-brand-soft);
+  color: var(--vp-c-brand-1);
+}

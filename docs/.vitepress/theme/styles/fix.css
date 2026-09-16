@@ -1,0 +1,17 @@
+/* KaTeX 公式在窄屏溢出时可横向滚动 */
+.vp-doc .katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 4px 0;
+}
+
+/* Mermaid 图默认居中 */
+.vp-doc .mermaid {
+  display: flex;
+  justify-content: center;
+}
+
+/* nolebase 页面属性 / 页面历史区块与正文的间距 */
+.vp-doc .vp-nolebase-page-properties {
+  margin-bottom: 20px;
+}

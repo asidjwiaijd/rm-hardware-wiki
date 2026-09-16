@@ -1,0 +1,17 @@
+.vp-doc .custom-block {
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.vp-doc .custom-block .custom-block-title {
+  font-weight: 700;
+}
+
+.vp-doc .custom-block p {
+  line-height: 1.7;
+}
+
+/* details 容器折叠时的箭头对齐 */
+.vp-doc .custom-block.details > summary {
+  cursor: pointer;
+}

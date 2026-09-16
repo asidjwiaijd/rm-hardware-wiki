@@ -1,0 +1,26 @@
+.VPHome .VPFeature {
+  border-color: var(--vp-c-divider);
+  transition:
+    border-color 0.25s,
+    transform 0.25s;
+}
+
+.VPHome .VPFeature:hover {
+  border-color: var(--vp-c-brand-1);
+  transform: translateY(-2px);
+}
+
+.VPHome .VPFeature .title {
+  line-height: 1.5;
+}
+
+.VPHome .VPFeature .details {
+  line-height: 1.8;
+}
+
+/* 首页 hero 的按钮排布在窄屏容易挤成一列，收一下间距 */
+@media (max-width: 640px) {
+  .VPHome .actions .action {
+    padding: 4px;
+  }
+}

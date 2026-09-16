@@ -1,0 +1,50 @@
+/* 正文排版：中文行距放宽，代码和表格更紧凑 */
+.vp-doc p,
+.vp-doc li {
+  line-height: 1.75;
+}
+
+.vp-doc li + li {
+  margin-top: 4px;
+}
+
+.vp-doc table {
+  display: table;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.vp-doc th,
+.vp-doc td {
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+/* 长表格在窄屏能横向滚动，而不是撑破页面 */
+@media (max-width: 720px) {
+  .vp-doc div:has(> table) {
+    overflow-x: auto;
+  }
+}
+
+/* ==高亮== 的样式，用于标注搜索关键词和关键区分 */
+.vp-doc mark {
+  padding: 1px 3px;
+  border-radius: 3px;
+  background: var(--vp-c-warning-soft);
+  color: inherit;
+}
+
+/* 脚注区和正文之间拉开距离 */
+.vp-doc .footnotes {
+  margin-top: 32px;
+  padding-top: 8px;
+  border-top: 1px solid var(--vp-c-divider);
+  font-size: 13.5px;
+  color: var(--vp-c-text-2);
+}
+
+/* 时间线插件 */
+.vp-doc .timeline-dot {
+  background: var(--vp-c-brand-1);
+}

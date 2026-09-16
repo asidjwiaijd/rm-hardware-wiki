@@ -1,0 +1,14 @@
+{
+  "globs": ["docs/**/*.md"],
+  "ignores": ["node_modules/**", "docs/.vitepress/dist/**"],
+  "config": {
+    // 文档里大量使用 Vue 组件和自定义容器
+    "no-inline-html": false,
+    "line-length": false,
+    "no-duplicate-heading": false,
+    "first-line-heading": false,
+    "single-title": false,
+    // 中文文档里 emphasis 当标题用是常见写法
+    "no-emphasis-as-heading": false
+  }
+}

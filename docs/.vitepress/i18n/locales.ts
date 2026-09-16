@@ -1,0 +1,95 @@
+import { Property } from '@nolebase/vitepress-plugin-page-properties';
+import { DefaultTheme, UserConfig } from 'vitepress';
+import { SearchConfig } from 'vitepress-plugin-pagefind';
+
+const main: Partial<DefaultTheme.Config> = {
+  outline: {
+    label: '页面导航',
+    level: [2, 3],
+  },
+
+  lastUpdated: {
+    text: '此页最后更新于',
+    formatOptions: {
+      dateStyle: 'short',
+      timeStyle: 'medium',
+    },
+  },
+
+  docFooter: {
+    prev: '上一篇',
+    next: '下一篇',
+  },
+
+  notFound: {
+    quote: '这里什么都没有。如果你确信这是个错误，欢迎去仓库提 Issue。',
+    linkLabel: '返回首页',
+    linkText: '返回首页',
+  },
+
+  darkModeSwitchLabel: '外观',
+  returnToTopLabel: '返回顶部',
+  sidebarMenuLabel: '菜单',
+  langMenuLabel: '多语言',
+  lightModeSwitchTitle: '切换到浅色模式',
+  darkModeSwitchTitle: '切换到深色模式',
+};
+
+const search: Partial<SearchConfig> = {
+  btnPlaceholder: '搜索',
+  placeholder: '搜索文档',
+  emptyText: '什么都没找到',
+  loadingText: '加载中...',
+  heading: '共 {{searchResult}} 条结果',
+  toSelect: '跳转到选定结果',
+  toClose: '关闭',
+  toNavigate: '切换',
+};
+
+const markdown: UserConfig<DefaultTheme.Config>['markdown'] = {
+  container: {
+    tipLabel: '💡 提示',
+    warningLabel: '⚠️ 注意',
+    dangerLabel: '‼️ 警告',
+    infoLabel: '📖 信息',
+    detailsLabel: '点击展开/折叠',
+  },
+};
+
+const pageProperties: Record<string, Property<'progress'>[]> = {
+  'zh-CN': [
+    {
+      key: 'wordCount',
+      type: 'dynamic',
+      title: '字数',
+      options: { type: 'wordsCount' },
+    },
+    {
+      key: 'readingTime',
+      type: 'dynamic',
+      title: '阅读时间',
+      options: { type: 'readingTime', dateFnsLocaleName: 'zhCN' },
+    },
+  ],
+};
+
+const mermaidToolbarText: Record<
+  | 'zoomIn'
+  | 'zoomOut'
+  | 'resetView'
+  | 'copyCode'
+  | 'toggleFullscreen'
+  | 'download'
+  | 'copyCodeCopied',
+  string
+> = {
+  zoomIn: '放大',
+  zoomOut: '缩小',
+  resetView: '重置视图',
+  copyCode: '复制代码',
+  copyCodeCopied: '代码已复制',
+  download: '下载',
+  toggleFullscreen: '切换全屏',
+};
+
+export default { main, search, markdown, pageProperties, mermaidToolbarText };

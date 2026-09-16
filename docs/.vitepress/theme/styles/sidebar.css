@@ -1,0 +1,12 @@
+/* 侧边栏里由 sidebar.ts 注入的难度徽标 */
+.VPSidebarItem .sidebar-badge {
+  margin-left: 6px;
+  transform: translateY(-1px);
+  font-size: 10px;
+  vertical-align: middle;
+}
+
+/* 没有 link 的分组标题（空壳页）不要显示成可点的样子 */
+.VPSidebarItem.is-link > .item > .text {
+  cursor: pointer;
+}

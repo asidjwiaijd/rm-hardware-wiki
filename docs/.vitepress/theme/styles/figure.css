@@ -1,0 +1,26 @@
+/* @mdit/plugin-figure 产出的 figure/figcaption */
+.vp-doc figure {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.vp-doc figure img {
+  display: inline-block;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.vp-doc figcaption {
+  margin-top: 8px;
+  font-size: 13px;
+  color: var(--vp-c-text-3);
+}
+
+/* medium-zoom 放大时给个干净的底 */
+.medium-zoom-overlay {
+  z-index: 100;
+}
+
+.medium-zoom-image--opened {
+  z-index: 101;
+}

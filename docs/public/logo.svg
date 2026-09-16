@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="RM 硬件组">
+  <rect x="4" y="4" width="56" height="56" rx="12" fill="#c8321e"/>
+  <!-- 芯片本体 -->
+  <rect x="20" y="20" width="24" height="24" rx="3" fill="none" stroke="#fff" stroke-width="3"/>
+  <circle cx="26" cy="26" r="2.2" fill="#fff"/>
+  <!-- 引脚 -->
+  <g stroke="#fff" stroke-width="3" stroke-linecap="round">
+    <path d="M26 20v-7M32 20v-7M38 20v-7"/>
+    <path d="M26 44v7M32 44v7M38 44v7"/>
+    <path d="M20 26h-7M20 32h-7M20 38h-7"/>
+    <path d="M44 26h7M44 32h7M44 38h7"/>
+  </g>
+</svg>

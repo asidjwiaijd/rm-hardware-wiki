@@ -1,0 +1,51 @@
+{
+  "name": "rm-hardware-wiki",
+  "version": "2026.9",
+  "private": true,
+  "description": "RM 苍穹战队硬件组培训 Wiki",
+  "license": "CC-BY-SA-4.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs",
+    "format": "lint-md docs/** --fix && prettier 'docs/**/*.{md,ts,vue}' 'docs/.vitepress/**/*.{ts,vue}' -w && markdownlint-cli2 --fix",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@lint-md/cli": "^2.3.1",
+    "@types/node": "^22.20.3",
+    "@types/remove-markdown": "^0.3.4",
+    "husky": "^9.1.7",
+    "prettier": "^3.9.6",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@mdit/plugin-align": "^1.1.1",
+    "@mdit/plugin-figure": "^1.2.1",
+    "@mdit/plugin-katex": "^1.1.1",
+    "@mdit/plugin-mark": "^2.1.1",
+    "@mdit/plugin-spoiler": "^2.1.1",
+    "@mdit/plugin-sup": "^1.1.1",
+    "@nolebase/markdown-it-bi-directional-links": "^2.18.2",
+    "@nolebase/vitepress-plugin-git-changelog": "^2.18.2",
+    "@nolebase/vitepress-plugin-highlight-targeted-heading": "^2.18.2",
+    "@nolebase/vitepress-plugin-page-properties": "^2.18.2",
+    "@waline/client": "^3.15.2",
+    "markdownlint-cli2": "^0.23.2",
+    "medium-zoom": "^1.1.0",
+    "nprogress-v2": "^1.1.10",
+    "octokit": "^5.0.5",
+    "pagefind": "^1.5.2",
+    "remove-markdown": "^0.7.0",
+    "simple-git": "^3.28.0",
+    "vitepress": "^1.6.4",
+    "vitepress-markdown-timeline": "^1.2.2",
+    "vitepress-mermaid-renderer": "^1.2.2",
+    "vitepress-plugin-back-to-top": "^1.0.1",
+    "vitepress-plugin-pagefind": "^0.4.24",
+    "vitepress-plugin-tabs": "^0.9.1",
+    "vitepress-sidebar": "^1.40.0",
+    "vue": "^3.5.42"
+  }
+}
