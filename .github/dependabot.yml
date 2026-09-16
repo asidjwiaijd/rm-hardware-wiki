@@ -4,6 +4,17 @@ updates:
     directory: /
     schedule:
       interval: 'weekly'
+    # 与 pnpm-workspace.yaml 的 minimumReleaseAge: 30 对齐。
+    # 否则 dependabot 会提出刚发布几天的版本，而 pnpm 在
+    # `install --frozen-lockfile` 阶段拒装，PR 必然挂在 CI 上。
+    cooldown:
+      default-days: 30
+    ignore:
+      # Vue 的 SFC 编译器依赖 TypeScript 解析 defineProps<T>() 的导入类型，
+      # TS 7 下 vitepress-plugin-pagefind 的 CommandRoot.vue 解析失败、构建中断。
+      # 等上游适配后再手动升。
+      - dependency-name: 'typescript'
+        update-types: ['version-update:semver-major']
     groups:
       all-dependencies:
         patterns:
@@ -13,6 +24,8 @@ updates:
     directory: /
     schedule:
       interval: 'monthly'
+    cooldown:
+      default-days: 30
     groups:
       all-dependencies:
         patterns:

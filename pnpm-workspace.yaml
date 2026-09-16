@@ -8,3 +8,10 @@ allowBuilds:
   vue-demi: true
 
 minimumReleaseAge: 30
+
+overrides:
+  # @nolebase/markdown-it-bi-directional-links 仍在 import
+  # markdown-it/lib/token.mjs，而 markdown-it 15 取消了这个子路径导出，
+  # 升上去构建会直接 ERR_PACKAGE_PATH_NOT_EXPORTED。
+  # 等 nolebase 适配 markdown-it 15 之后再解除。
+  markdown-it: ^14.3.0
