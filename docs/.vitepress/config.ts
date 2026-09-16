@@ -34,11 +34,19 @@ import locales from './i18n/locales.ts';
 import preserveMarkSyntaxInsideContainers from './plugins/preserveMarkSyntaxInsideContainers.ts';
 import sidebar, { excludedPages } from './sidebar.ts';
 
-// 站点部署地址。项目页（<user>.github.io/<repo>/）必须配 base，
-// 若换成 <user>.github.io 这种用户页仓库，把 BASE 改成 '/' 即可。
-const BASE = '/rm-hardware-wiki/';
-const HOSTNAME = 'https://asidjwiaijd.github.io';
+// 站点部署地址。默认值对应 GitHub Pages 项目页
+// （<user>.github.io/<repo>/，必须带 base）。
+//
+// 自托管时用环境变量覆盖，一份代码可以构建出两个部署目标：
+//   SITE_BASE=/ SITE_ORIGIN=http://192.168.8.244:18086 pnpm build
+//
+// SITE_ORIGIN 只影响 sitemap 和 og/canonical，不影响资源路径。
+const BASE = process.env.SITE_BASE ?? '/rm-hardware-wiki/';
+const ORIGIN = process.env.SITE_ORIGIN ?? 'https://asidjwiaijd.github.io';
 const REPO = 'https://github.com/asidjwiaijd/rm-hardware-wiki';
+
+// 站点根的绝对地址，用于 canonical / og:url / sitemap
+const SITE_URL = ORIGIN.replace(/\/$/, '') + BASE;
 
 const time =
   new Date().toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' }) +
@@ -162,7 +170,7 @@ export default defineConfig({
   },
 
   sitemap: {
-    hostname: HOSTNAME + BASE,
+    hostname: SITE_URL,
   },
 
   srcExclude: excludedPages.concat(['**/part_*.md']),
@@ -179,10 +187,8 @@ function transformPageData(
   }
 
   const url = new URL(
-    BASE.replace(/\/$/, '') +
-      '/' +
-      pageData.relativePath.replace(/(?:(^|\/)index)?\.md$/, '$1'),
-    HOSTNAME,
+    pageData.relativePath.replace(/(?:(^|\/)index)?\.md$/, '$1'),
+    SITE_URL,
   ).href;
   // 单语言站点直接取 site 即可；多语言时才需要按路由解析 locale
   const site = ctx.siteConfig.site;
