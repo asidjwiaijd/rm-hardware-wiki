@@ -24,7 +24,7 @@ RM 苍穹战队硬件组的培训与知识库，由队员共同维护。
 
 ## 技术栈
 
-站点基于 [VitePress](https://vitepress.dev/) 构建，部署在 GitHub Pages 上。
+站点基于 [VitePress](https://vitepress.dev/) 构建，同时发布到 GitHub Pages 和战队内网服务器，两边共用一份代码。
 
 - 侧边栏由目录结构自动生成，==新建 md 文件即自动出现在导航里==
 - 全文搜索用 [Pagefind](https://pagefind.app/)，构建期生成索引，纯静态
