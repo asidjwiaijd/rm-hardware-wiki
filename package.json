@@ -5,6 +5,7 @@
   "description": "RM 苍穹战队硬件组培训 Wiki",
   "license": "CC-BY-SA-4.0",
   "type": "module",
+  "packageManager": "pnpm@12.4.2",
   "scripts": {
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
