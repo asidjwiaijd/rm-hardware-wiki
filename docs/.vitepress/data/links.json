@@ -1,0 +1,45 @@
+{
+  "categories": [
+    {
+      "id": "chip",
+      "name": "芯片与厂商文档",
+      "icon": "📄",
+      "items": [
+        { "name": "STM32F103C8 产品页", "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32f103c8.html", "purpose": "数据手册、参考手册、勘误表", "tags": ["STM32", "数据手册"] },
+        { "name": "STM32Cube MCU Packages", "url": "https://www.st.com/en/embedded-software/stm32cube-mcu-packages.html", "purpose": "HAL 库与示例工程", "tags": ["STM32", "HAL"] },
+        { "name": "STM32CubeIDE", "url": "https://www.st.com/en/development-tools/stm32cubeide.html", "purpose": "ST 官方 IDE", "tags": ["STM32", "IDE"] },
+        { "name": "TI 运算放大器", "url": "https://www.ti.com/amplifier-circuit/op-amps/overview.html", "purpose": "运放选型与应用笔记", "tags": ["运放", "选型"] },
+        { "name": "TI 电池管理", "url": "https://www.ti.com/power-management/battery-management/overview.html", "purpose": "充电管理芯片", "tags": ["电源", "充电"] },
+        { "name": "TI DC-DC 转换器", "url": "https://www.ti.com/power-management/dcdc-converters/overview.html", "purpose": "BUCK / BOOST 选型", "tags": ["电源", "BUCK", "BOOST"] },
+        { "name": "TI LDO 线性稳压器", "url": "https://www.ti.com/power-management/linear-regulators-ldo/overview.html", "purpose": "LDO 选型", "tags": ["电源", "LDO"] }
+      ]
+    },
+    {
+      "id": "book",
+      "name": "教材与参考",
+      "icon": "📚",
+      "items": [
+        { "name": "All About Circuits 教材", "url": "https://www.allaboutcircuits.com/textbook/", "purpose": "电路基础，英文，免费", "tags": ["电路基础", "英文"] },
+        { "name": "cppreference · C 语言", "url": "https://zh.cppreference.com/w/c", "purpose": "C 标准库查询，中文", "tags": ["C 语言", "中文"] }
+      ]
+    },
+    {
+      "id": "tool",
+      "name": "工具与平台",
+      "icon": "🛠️",
+      "items": [
+        { "name": "嘉立创 EDA", "url": "https://lceda.cn/", "purpose": "画原理图和 PCB", "tags": ["EDA", "PCB"] },
+        { "name": "嘉立创官网", "url": "https://www.jlc.com/", "purpose": "打样下单、工艺参数", "tags": ["打样", "PCB"] },
+        { "name": "Multisim 下载", "url": "https://www.ni.com/zh-cn/support/downloads/software-products/download.multisim.html", "purpose": "电路仿真（可选）", "tags": ["仿真"] }
+      ]
+    },
+    {
+      "id": "team",
+      "name": "兄弟组文档",
+      "icon": "🤝",
+      "items": [
+        { "name": "电控组培训文档", "url": "https://xiaofxx.github.io/rm-ec-training/c-lang/", "purpose": "C 语言部分可以直接参考", "tags": ["C 语言", "电控组"] }
+      ]
+    }
+  ]
+}

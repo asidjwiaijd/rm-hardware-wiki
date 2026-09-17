@@ -1,0 +1,82 @@
+{
+  "kinds": {
+    "buy": { "label": "要买", "icon": "🛒", "hint": "耗材或器件，得自己下单" },
+    "tool": { "label": "工具", "icon": "🔧", "hint": "先问实验室有没有，能借就别买" },
+    "optional": { "label": "可选", "icon": "✨", "hint": "有更好，没有也不影响完成任务" }
+  },
+  "weeks": [
+    {
+      "week": 1,
+      "title": "基础器件",
+      "items": [
+        { "name": "面包板", "spec": "免焊接搭电路", "kind": "buy" },
+        { "name": "阻容器件包", "spec": "插件件与 0603 贴片件都要", "kind": "buy" },
+        { "name": "LED 包", "spec": "各色直插", "kind": "buy" },
+        { "name": "三极管", "spec": "S8050（NPN）、S8550（PNP）", "kind": "buy" },
+        { "name": "杜邦线", "spec": "公对公、公对母", "kind": "buy" },
+        { "name": "常用 IC 收纳盒", "spec": "后面几周会陆续买芯片", "kind": "buy" },
+        { "name": "STM32F103C8T6 开发板", "spec": "功能由预算决定", "kind": "buy" }
+      ]
+    },
+    {
+      "week": 2,
+      "title": "模拟电路",
+      "items": [
+        { "name": "运放芯片", "spec": "LM324（四运放）、LM358（双运放）", "kind": "buy" },
+        { "name": "蓝白电位器", "spec": "调亮度、做 ADC 输入源都用得上", "kind": "buy" },
+        { "name": "打样基础元件", "spec": "按你自己画的板子的 BOM 买", "kind": "buy", "byDesign": true }
+      ]
+    },
+    {
+      "week": 3,
+      "title": "电源链路",
+      "items": [
+        { "name": "锂电池", "spec": "3.7V 可插拔，容量 ≥500mAh", "kind": "buy", "warning": "危险品，部分快递不收。绝对不要买没有保护板的裸电芯。" },
+        { "name": "USB 输入口", "spec": "microUSB 两脚座（焊接难度低）或其他 5V 输入", "kind": "buy" },
+        { "name": "充电芯片", "spec": "或成品充电模块", "kind": "buy" },
+        { "name": "升压芯片", "spec": "3.7V → 5V（BOOST）", "kind": "buy" },
+        { "name": "降压芯片", "spec": "5V → 3.3V（BUCK）", "kind": "buy" },
+        { "name": "LDO", "spec": "3.3V → 2.5V", "kind": "buy" },
+        { "name": "电感、电容、电阻", "spec": "按所选芯片数据手册配", "kind": "buy", "byDesign": true },
+        { "name": "接口座、排针", "spec": "按设计选", "kind": "buy", "byDesign": true }
+      ]
+    },
+    {
+      "week": 4,
+      "title": "焊接与调试",
+      "items": [
+        { "name": "焊锡丝", "spec": "含铅的更好焊，注意通风", "kind": "buy" },
+        { "name": "助焊剂", "spec": "松香或免洗助焊剂", "kind": "buy" },
+        { "name": "吸锡带", "spec": "拆错件、清多余锡", "kind": "buy" },
+        { "name": "排针、热缩管", "spec": "", "kind": "buy" },
+        { "name": "USB 数据线", "spec": "注意别买到只能充电的线", "kind": "buy" },
+        { "name": "电烙铁 / 焊台", "spec": "可以先用实验室的", "kind": "tool" },
+        { "name": "万用表", "spec": "全程都要用", "kind": "tool", "essential": true },
+        { "name": "ST-Link", "spec": "下载和调试", "kind": "tool", "essential": true }
+      ]
+    },
+    {
+      "week": 5,
+      "title": "最小系统板",
+      "items": [
+        { "name": "STM32F103C8T6 芯片", "spec": "注意封装（LQFP48）", "kind": "buy" },
+        { "name": "8MHz 晶振", "spec": "及配套负载电容，按晶振手册选值", "kind": "buy" },
+        { "name": "复位按钮", "spec": "", "kind": "buy" },
+        { "name": "BOOT 跳帽", "spec": "或用电阻固定电平", "kind": "buy" },
+        { "name": "3.3V 稳压器", "spec": "", "kind": "buy" },
+        { "name": "SWD 接口座、排针座", "spec": "", "kind": "buy" },
+        { "name": "指示灯、限流电阻", "spec": "", "kind": "buy" }
+      ]
+    },
+    {
+      "week": 6,
+      "title": "通信整合",
+      "items": [
+        { "name": "电位器或模拟传感器", "spec": "ADC 输入源", "kind": "buy" },
+        { "name": "USB 转串口模块", "spec": "CH340 / CP2102 都行", "kind": "buy" },
+        { "name": "待联调的下位机模块", "spec": "按你的演示方案选", "kind": "buy", "byDesign": true },
+        { "name": "示波器 / 逻辑分析仪", "spec": "实验室通常有", "kind": "optional" }
+      ]
+    }
+  ]
+}

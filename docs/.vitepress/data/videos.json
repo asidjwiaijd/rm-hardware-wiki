@@ -1,0 +1,95 @@
+{
+  "lectures": [
+    {
+      "no": 1,
+      "title": "硬件导论与嘉立创 EDA 使用",
+      "weeks": [
+        1
+      ],
+      "url": "https://www.bilibili.com/video/BV1XaJDzwEYE/",
+      "linkText": "BV1XaJDzwEYE"
+    },
+    {
+      "no": 2,
+      "title": "基本电子元器件介绍",
+      "weeks": [
+        1,
+        2
+      ],
+      "url": "https://www.bilibili.com/video/BV18xJdzrE8a/",
+      "linkText": "BV18xJdzrE8a"
+    },
+    {
+      "no": 3,
+      "title": "有线通信协议",
+      "weeks": [
+        4
+      ],
+      "url": "https://search.bilibili.com/all?keyword=%E7%A1%AC%E4%BB%B6%E7%BB%84%E7%AC%AC%E4%B8%89%E8%AE%B2%EF%BC%9A%E6%9C%89%E7%BA%BF%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE",
+      "linkText": "B 站搜索直达",
+      "needsDirectLink": true
+    },
+    {
+      "no": 4,
+      "title": "成为“焊武帝”",
+      "weeks": [
+        4
+      ],
+      "url": "https://search.bilibili.com/all?keyword=%E7%A1%AC%E4%BB%B6%E7%BB%84%E7%AC%AC%E5%9B%9B%E8%AE%B2%EF%BC%9A%E6%88%90%E4%B8%BA%E2%80%9C%E7%84%8A%E6%AD%A6%E5%B8%9D%E2%80%9D",
+      "linkText": "B 站搜索直达",
+      "needsDirectLink": true
+    },
+    {
+      "no": 5,
+      "title": "必备硬件知识",
+      "weeks": [
+        3,
+        6
+      ],
+      "url": "https://www.bilibili.com/video/BV1XzHczcEVy/",
+      "linkText": "BV1XzHczcEVy",
+      "reviewWeeks": [
+        6
+      ]
+    },
+    {
+      "no": 6,
+      "title": "最小系统板绘制与大作业指导",
+      "weeks": [
+        5,
+        6
+      ],
+      "url": "https://www.bilibili.com/video/BV1vtHJzHEKK/",
+      "linkText": "BV1vtHJzHEKK",
+      "reviewWeeks": [
+        6
+      ]
+    }
+  ],
+  "weeks": [
+    {
+      "week": 1,
+      "title": "入门与工具"
+    },
+    {
+      "week": 2,
+      "title": "模拟电路"
+    },
+    {
+      "week": 3,
+      "title": "电源链路"
+    },
+    {
+      "week": 4,
+      "title": "焊接与通信"
+    },
+    {
+      "week": 5,
+      "title": "最小系统板"
+    },
+    {
+      "week": 6,
+      "title": "整合与答辩"
+    }
+  ]
+}

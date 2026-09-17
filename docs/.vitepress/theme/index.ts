@@ -6,9 +6,12 @@ import vitepressBackToTop from 'vitepress-plugin-back-to-top';
 import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client';
 import DefaultTheme from 'vitepress/theme';
 import locales from '../i18n/locales';
+import BomPlanner from './components/BomPlanner.vue';
 import LinkCard from './components/LinkCard.vue';
 import Note from './components/Note.vue';
+import ResourceGrid from './components/ResourceGrid.vue';
 import ToDo from './components/ToDo.vue';
+import VideoMap from './components/VideoMap.vue';
 import Layout from './Layout.vue';
 
 import '@mdit/plugin-spoiler/style';
@@ -32,6 +35,11 @@ export default {
     app.component('Note', Note);
     app.component('ToDo', ToDo);
     app.component('LinkCard', LinkCard);
+
+    // 资源区的三个可视化组件
+    app.component('BomPlanner', BomPlanner);
+    app.component('VideoMap', VideoMap);
+    app.component('ResourceGrid', ResourceGrid);
 
     app.use(NolebaseGitChangelogPlugin);
     app.use(NolebasePagePropertiesPlugin<{ progress: number }>(), {
