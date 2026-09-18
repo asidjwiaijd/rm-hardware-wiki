@@ -1,5 +1,5 @@
 ---
-order: 4
+order: 3
 title: 环境配置
 level: 入门
 ---

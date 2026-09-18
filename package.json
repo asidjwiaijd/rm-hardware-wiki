@@ -33,6 +33,7 @@
     "@nolebase/vitepress-plugin-highlight-targeted-heading": "^2.18.2",
     "@nolebase/vitepress-plugin-page-properties": "^2.18.2",
     "@waline/client": "^3.15.2",
+    "esbuild": "^0.21.5",
     "markdownlint-cli2": "^0.23.2",
     "medium-zoom": "^1.1.0",
     "nprogress-v2": "^1.1.10",
@@ -48,5 +49,8 @@
     "vitepress-plugin-tabs": "^0.9.1",
     "vitepress-sidebar": "^1.40.0",
     "vue": "^3.5.42"
+  },
+  "allowScripts": {
+    "esbuild@0.21.5": true
   }
 }
