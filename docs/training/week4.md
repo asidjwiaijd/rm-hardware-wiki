@@ -2,6 +2,7 @@
 order: 14
 title: 第 4 周 · STM32、焊接与验证
 level: 进阶
+exclude: true
 ---
 
 # 第 4 周 · STM32、焊接与验证

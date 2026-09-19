@@ -2,6 +2,7 @@
 order: 13
 title: 第 3 周 · 电源链路与系统设计
 level: 核心
+exclude: true
 ---
 
 # 第 3 周 · 电源链路与系统设计

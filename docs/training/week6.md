@@ -2,6 +2,7 @@
 order: 16
 title: 第 6 周 · 中断、ADC 与通信整合
 level: 核心
+exclude: true
 ---
 
 # 第 6 周 · 中断、ADC 与通信整合

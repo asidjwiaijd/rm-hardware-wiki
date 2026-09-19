@@ -2,6 +2,7 @@
 order: 12
 title: 第 2 周 · 典型电路、仿真与 PCB
 level: 入门
+exclude: true
 ---
 
 # 第 2 周 · 典型电路、仿真与 PCB
