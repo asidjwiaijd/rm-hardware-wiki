@@ -4,6 +4,8 @@ node_modules/
 # VitePress
 docs/.vitepress/dist/
 docs/.vitepress/cache/
+# vitepress 构建时生成的配置转译产物（内含本机绝对路径）
+config.ts.timestamp-*.mjs
 
 # 编辑器
 .idea/

@@ -11,11 +11,18 @@ type CustomAuthor = {
   mapByNameAliases: string[];
 };
 
-const octokit = new Octokit(
-  process.env.GITHUB_TOKEN
-    ? { auth: process.env.GITHUB_TOKEN, userAgent: 'RM-Hardware-Wiki' }
-    : undefined,
-);
+const octokit = new Octokit({
+  userAgent: 'RM-Hardware-Wiki',
+  ...(process.env.GITHUB_TOKEN ? { auth: process.env.GITHUB_TOKEN } : {}),
+
+  // 额度耗尽时，octokit 打包的限流插件默认行为是**一直等到额度重置**，最坏能把
+  // 构建挂住一小时（自托管构建上实际发生过）。返回 false 让它直接抛错，落到
+  // getAuthors 的 catch 里降级 —— 构建照常完成，只是贡献者区少几个人。
+  throttle: {
+    onRateLimit: () => false,
+    onSecondaryRateLimit: () => false,
+  },
+});
 
 // 用非 GitHub 名义提交过、或 co-author 形式参与的成员，在这里补映射
 const customAuthors: CustomAuthor[] = [
