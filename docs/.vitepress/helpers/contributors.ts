@@ -18,7 +18,12 @@ const octokit = new Octokit(
 );
 
 // 用非 GitHub 名义提交过、或 co-author 形式参与的成员，在这里补映射
-const customAuthors: CustomAuthor[] = [];
+const customAuthors: CustomAuthor[] = [
+  {
+    id: 85775283,
+    mapByNameAliases: ['Miriko H', 'MirikoHi'],
+  },
+];
 
 // 完全不在 GitHub 上的贡献者，直接写死
 const extraAuthors: Author[] = [];
