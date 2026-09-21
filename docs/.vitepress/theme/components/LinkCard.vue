@@ -3,23 +3,30 @@ import { withBase } from 'vitepress';
 import { computed } from 'vue';
 
 const props = defineProps<{
-  href: string;
+  /** 省略时渲染成不可点击的纯卡片，用于"页面还没写"的条目 */
+  href?: string;
   title?: string;
   subtitle?: string;
 }>();
 
-const isExternal = computed(() => /^[a-z]+:/i.test(props.href));
+const isExternal = computed(() => !!props.href && /^[a-z]+:/i.test(props.href));
 
 // 站内链接必须过 withBase：组件里的 href 不像 Markdown 链接那样会被自动加 base 前缀
 const resolved = computed(() =>
-  isExternal.value ? props.href : withBase(props.href),
+  props.href
+    ? isExternal.value
+      ? props.href
+      : withBase(props.href)
+    : undefined,
 );
 </script>
 
 <template>
-  <a
+  <component
+    :is="resolved ? 'a' : 'div'"
     :href="resolved"
     class="link-card"
+    :class="{ 'link-card-static': !resolved }"
     :target="isExternal ? '_blank' : undefined"
     :rel="isExternal ? 'noreferrer' : undefined"
   >
@@ -37,7 +44,7 @@ const resolved = computed(() =>
     </div>
     <div v-if="$slots.default" class="card-body"><slot /></div>
     <div v-if="$slots.footer" class="card-footer"><slot name="footer" /></div>
-  </a>
+  </component>
 </template>
 
 <style scoped>
@@ -59,6 +66,17 @@ const resolved = computed(() =>
   border-color: var(--vp-c-brand-1);
   background: var(--vp-c-bg-elv);
   transform: translateY(-2px);
+}
+
+/* 没有 href 的卡片不假装可点 */
+.link-card-static {
+  cursor: default;
+}
+
+.link-card-static:hover {
+  border-color: var(--vp-c-divider);
+  background: var(--vp-c-bg-soft);
+  transform: none;
 }
 
 .card-header {

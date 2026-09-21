@@ -7,9 +7,9 @@
 
 ## 内容
 
-- **六周培训计划** —— 2027 秋季招新第一个月的任务、顺序、提交物和物料清单
+- **七周培训计划** —— 2027 秋季招新第一个月的任务、顺序、提交物和物料清单
 - **环境配置指引** —— 嘉立创 EDA、STM32CubeMX、VS Code、CMake、MinGW-w64 等
-- **资源与清单** —— 视频入口、六周物料总表、外部资料
+- **资源与清单** —— 视频入口、七周物料总表、外部资料
 
 ## 本地开发
 
@@ -29,7 +29,7 @@ pnpm format    # 格式化 md / ts / vue
 docs/
   index.md                    首页
   intro.md  schedule.md       入口页
-  training/                   六周培训计划
+  training/                   七周培训计划
   environment/                环境配置
   resources/                  视频、物料、外链
   about/                      关于与参与方式

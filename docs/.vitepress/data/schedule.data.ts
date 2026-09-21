@@ -6,10 +6,11 @@ export type TrainingWeek = {
   title: string;
   start: string;
   end: string;
-  href: string;
-  focus: string;
+  /** 页面还没写时可以留空，周表仍然列出这一周，只是不可点 */
+  href?: string;
+  focus?: string;
   lectures?: string[];
-  highlights: string[];
+  highlights?: string[];
 };
 
 export type ScheduleData = {
@@ -88,9 +89,16 @@ function assertWeek(
     throw new Error(`schedule.json: weeks[${index}].week must be an integer`);
   }
 
-  for (const field of ['title', 'href', 'focus'] as const) {
-    if (!isNonEmptyString(record[field])) {
-      throw new Error(`schedule.json: weeks[${index}].${field} is required`);
+  if (!isNonEmptyString(record.title)) {
+    throw new Error(`schedule.json: weeks[${index}].title is required`);
+  }
+
+  // href / focus 允许缺省：页面还没写的周次也要能进周表
+  for (const field of ['href', 'focus'] as const) {
+    if (record[field] !== undefined && !isNonEmptyString(record[field])) {
+      throw new Error(
+        `schedule.json: weeks[${index}].${field} must be a non-empty string when present`,
+      );
     }
   }
 
@@ -107,7 +115,7 @@ function assertWeek(
   }
 
   assertStringArray(record.lectures, index, 'lectures', false);
-  assertStringArray(record.highlights, index, 'highlights', true);
+  assertStringArray(record.highlights, index, 'highlights', false);
 }
 
 function assertScheduleData(value: unknown): asserts value is ScheduleData {

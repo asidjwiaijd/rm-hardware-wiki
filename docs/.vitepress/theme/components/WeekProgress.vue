@@ -118,7 +118,9 @@ onUnmounted(() => {
         </div>
 
         <h3 class="focus-title">{{ currentWeek.title }}</h3>
-        <p class="focus-desc">{{ currentWeek.focus }}</p>
+        <p v-if="currentWeek.focus" class="focus-desc">
+          {{ currentWeek.focus }}
+        </p>
 
         <div
           class="bar"
@@ -138,11 +140,14 @@ onUnmounted(() => {
           <span v-else>还剩 {{ currentWeek.daysRemaining }} 天</span>
         </div>
 
-        <ul class="highlights">
+        <ul v-if="currentWeek.highlights?.length" class="highlights">
           <li v-for="item in currentWeek.highlights" :key="item">{{ item }}</li>
         </ul>
 
-        <a class="focus-link" :href="withBase(currentWeek.href)"
+        <a
+          v-if="currentWeek.href"
+          class="focus-link"
+          :href="withBase(currentWeek.href)"
           >查看本周详细任务 →</a
         >
       </template>
@@ -187,7 +192,7 @@ onUnmounted(() => {
           </span>
         </template>
         {{ week.focus }}
-        <template #footer>
+        <template v-if="week.highlights?.length" #footer>
           {{ week.highlights.slice(0, 2).join(' · ') }}
         </template>
       </LinkCard>

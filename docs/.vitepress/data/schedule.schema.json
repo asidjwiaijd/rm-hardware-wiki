@@ -12,7 +12,7 @@
       "minItems": 1,
       "items": {
         "type": "object",
-        "required": ["week", "title", "start", "end", "href", "focus", "highlights"],
+        "required": ["week", "title", "start", "end"],
         "additionalProperties": false,
         "properties": {
           "week": { "type": "integer", "minimum": 1 },

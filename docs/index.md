@@ -17,7 +17,7 @@ hero:
       link: /schedule
 
     - theme: alt
-      text: 📖 六周培训计划
+      text: 📖 七周培训计划
       link: /training/
 
     - theme: alt
@@ -27,7 +27,7 @@ hero:
 features:
   - icon: 🧭
     title: 按周推进，不用自己找路
-    details: 六周计划把"学原理 → 做仿真 → 画板子 → 焊接验证 → 提交"串成一条线，每周都写清了任务、顺序、提交物和要买的东西。
+    details: 七周计划把"学原理 → 做仿真 → 画板子 → 焊接验证 → 提交"串成一条线，每周都写清了任务、顺序、提交物和要买的东西。
     link: /training/
     linkText: 打开培训计划
 
