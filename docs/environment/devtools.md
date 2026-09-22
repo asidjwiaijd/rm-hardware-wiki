@@ -50,6 +50,14 @@ CMake **本身不是构建工具**，而是生成构建系统的工具。它生�
 第一周写 `hello world` 时用的就是它。装完记得==把 bin 目录加进 PATH==，否则在终端里敲 `gcc` 会提示找不到命令。
 :::
 
+## Arm GNU Toolchain
+
+Arm 发布的 GNU 工具链（称为 **Arm GNU 工具链**），解压后==把 bin 目录加进 PATH==
+
+[下载直链](https://gitlab.arm.com/api/v4/projects/tooling%2Fgnu-toolchains-for-arm/packages/generic/gnu-toolchain/15.3.rel1/arm-gnu-toolchain-15.3.rel1-mingw-w64-i686-arm-none-eabi.zip) ：点击就直接下载压缩包
+
+[Arm GNU Toolchain](https://developer.arm.com/tools-and-software/gnu-toolchain#Downloads) ：官网
+
 ## Git
 
 [Git for Windows 安装页](https://git-scm.com/install/windows)
