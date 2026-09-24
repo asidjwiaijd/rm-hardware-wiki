@@ -53,6 +53,8 @@ flowchart LR
 - [本周该做什么](/schedule) —— 自动定位当前周次和剩余天数
 - [第 1 周 · 硬件导论与嘉立创 EDA](/training/week1) —— 重点任务、难点任务与课后自测
 - [讲义 · 硬件导论](/training/note1) —— 第一讲的完整讲义，含元器件与 PCB 工艺
+- [第 2 周 · 典型电路、仿真与 PCB](/training/week2) —— 运放、三极管与线性稳压器实战
+- [讲义 · 原理图与 PCB 综合实战](/training/note2) —— 第二讲的完整讲义，以线性稳压器为模型
 - [环境配置指引](/environment/) —— 第一周的主要工作量
 - [物料总清单](/resources/bom) —— 七周采购汇总，可以一次性下单
 - [视频入口](/resources/videos) —— 全部六讲的链接

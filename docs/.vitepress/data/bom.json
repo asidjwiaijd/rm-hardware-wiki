@@ -23,6 +23,11 @@
       "title": "模拟电路",
       "items": [
         { "name": "运放芯片", "spec": "LM324（四运放）、LM358（双运放）", "kind": "buy" },
+        { "name": "可调基准 TL431", "spec": "分立 LDO 的基准源，TO-92 或 SOT-23 封装", "kind": "buy" },
+        { "name": "AMS1117-3.3", "spec": "SOT-223 封装，集成 LDO 方案用", "kind": "buy" },
+        { "name": "NPN 功率管", "spec": "BD139 或 TIP41C，TO-220 封装，分立 LDO 的通路管", "kind": "buy" },
+        { "name": "钽电容 22 µF 与 MLCC", "spec": "10 µF、0.1 µF；AMS1117 的输出电容须按手册选钽电容", "kind": "buy" },
+        { "name": "电阻 10 kΩ、4.7 kΩ", "spec": "分压网络与 TL431 限流，0603 封装", "kind": "buy" },
         { "name": "蓝白电位器", "spec": "调亮度、做 ADC 输入源都用得上", "kind": "buy" },
         { "name": "打样基础元件", "spec": "按你自己画的板子的 BOM 买", "kind": "buy", "byDesign": true }
       ]

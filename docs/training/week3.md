@@ -1,5 +1,5 @@
 ---
-order: 13
+order: 15
 title: 第 3 周 · 电源链路与系统设计
 level: 核心
 exclude: true

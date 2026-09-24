@@ -18,6 +18,7 @@ const levelLabel: Record<string, { text: string; type: string }> = {
   进阶: { text: '进阶', type: 'warning' },
   核心: { text: '核心', type: 'danger' },
   待补充: { text: '待补充', type: 'info' },
+  初出茅庐: { text: '初出茅庐', type: 'warning' },
 };
 
 function readFrontmatter(link?: string): string | undefined {

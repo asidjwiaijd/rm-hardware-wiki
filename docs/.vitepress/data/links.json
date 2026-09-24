@@ -11,7 +11,8 @@
         { "name": "TI 运算放大器", "url": "https://www.ti.com/amplifier-circuit/op-amps/overview.html", "purpose": "运放选型与应用笔记", "tags": ["运放", "选型"] },
         { "name": "TI 电池管理", "url": "https://www.ti.com/power-management/battery-management/overview.html", "purpose": "充电管理芯片", "tags": ["电源", "充电"] },
         { "name": "TI DC-DC 转换器", "url": "https://www.ti.com/power-management/dcdc-converters/overview.html", "purpose": "BUCK / BOOST 选型", "tags": ["电源", "BUCK", "BOOST"] },
-        { "name": "TI LDO 线性稳压器", "url": "https://www.ti.com/power-management/linear-regulators-ldo/overview.html", "purpose": "LDO 选型", "tags": ["电源", "LDO"] }
+        { "name": "TI LDO 线性稳压器", "url": "https://www.ti.com/power-management/linear-regulators-ldo/overview.html", "purpose": "LDO 选型", "tags": ["电源", "LDO"] },
+        { "name": "TI 线性稳压器基础知识（zhca563）", "url": "https://www.ti.com.cn/cn/lit/an/zhca563/zhca563.pdf", "purpose": "LDO 环路补偿、ESR 零点与伯德图", "tags": ["电源", "LDO"] }
       ]
     },
     {
