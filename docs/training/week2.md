@@ -27,7 +27,6 @@ level: 初出茅庐
 - 完成 PCB 布局布线并提交打样
   - 按电流路径摆放，输入输出电容紧靠对应的引脚
   - SOT-223 的散热片接 $V_{OUT}$，铺铜面积尽量大，并打过孔阵列
-- 焊接打样回来的板子，限流上电并测量输出电压
 - C 语言继续推进到变量、函数、基本运算符
 
 ## 难点任务
@@ -71,24 +70,22 @@ level: 初出茅庐
 2. 通路管按 β = 50 保守估计，输出电流 300 mA。运放需要提供多大的基极电流？
 3. 通路管的最大功耗是多少？该选 SOT-23 还是 TO-220？
 
-## 物料准备
+## 作业
+
+### 物料准备
 
 **需要采购：** 运放（LM358、LM324）、可调基准 TL431、NPN 功率管（BD139 或 TIP41C，TO-220 封装）、AMS1117-3.3（SOT-223）、钽电容 22 µF、MLCC 10 µF 与 0.1 µF、电阻（10 kΩ、4.7 kΩ）、打样所需基础元件。
 
-**需要准备：** 嘉立创 EDA 账号与下单助手、万用表、可调限流电源（若有）、仿真软件元件库（若用 Multisim）。
+**需要准备：** 嘉立创 EDA 与下单助手、万用表、可调限流电源（若有）、仿真软件元件库（若用 Multisim）。
 
-## 提交建议
+### 提交
 
 - 仿真文件与波形截图
-- 面包板电路演示视频
-- 两张原理图截图
-- PCB 截图与打样订单
-- 焊接成品照片与上电测试记录
-- 原理解释报告
+- 嘉立创 EDA 工程文件
 
-## 视频入口
+提交邮箱： <1972500365@qq.com>
 
-- [第二讲：基本电子元器件介绍](https://www.bilibili.com/video/BV18xJdzrE8a/)
+**提交时注明学号与姓名**
 
 ## 参考资料
 
@@ -96,4 +93,3 @@ level: 初出茅庐
 - [TI 线性稳压器基础知识（zhca563）](https://www.ti.com.cn/cn/lit/an/zhca563/zhca563.pdf) —— 附录中 ESR 零点与伯德图的来源
 - [TI 运放知识入口](https://www.ti.com/amplifier-circuit/op-amps/overview.html)
 - [Multisim 官方页](https://www.ni.com/zh-cn/support/downloads/software-products/download.multisim.html)
-- [All About Circuits 电路基础教材](https://www.allaboutcircuits.com/textbook/)
