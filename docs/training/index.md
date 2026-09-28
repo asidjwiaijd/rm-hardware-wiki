@@ -1,5 +1,5 @@
 ---
-order: 4
+order: 5
 title: 培训计划
 level: 入门
 ---
