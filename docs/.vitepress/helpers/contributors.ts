@@ -28,7 +28,7 @@ const octokit = new Octokit({
 const customAuthors: CustomAuthor[] = [
   {
     id: 85775283,
-    mapByNameAliases: ['Miriko H', 'MirikoHi'],
+    mapByNameAliases: ['Miriko H', 'MirikoHi', '荼'],
   },
 ];
 

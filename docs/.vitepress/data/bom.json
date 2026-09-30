@@ -34,16 +34,14 @@
     },
     {
       "week": 3,
-      "title": "电源链路",
+      "title": "通信接口",
       "items": [
-        { "name": "锂电池", "spec": "3.7V 可插拔，容量 ≥500mAh", "kind": "buy", "warning": "危险品，部分快递不收。绝对不要买没有保护板的裸电芯。" },
-        { "name": "USB 输入口", "spec": "microUSB 两脚座（焊接难度低）或其他 5V 输入", "kind": "buy" },
-        { "name": "充电芯片", "spec": "或成品充电模块", "kind": "buy" },
-        { "name": "升压芯片", "spec": "3.7V → 5V（BOOST）", "kind": "buy" },
-        { "name": "降压芯片", "spec": "5V → 3.3V（BUCK）", "kind": "buy" },
-        { "name": "LDO", "spec": "3.3V → 2.5V", "kind": "buy" },
-        { "name": "电感、电容、电阻", "spec": "按所选芯片数据手册配", "kind": "buy", "byDesign": true },
-        { "name": "接口座、排针", "spec": "按设计选", "kind": "buy", "byDesign": true }
+        { "name": "USB 转串口模块", "spec": "CH340 或 CP2102，UART 调试与打印用", "kind": "buy" },
+        { "name": "CAN 收发器", "spec": "TJA1050 / SIT1042；若所用电机电调已集成收发器则不必买", "kind": "buy" },
+        { "name": "120 Ω 电阻", "spec": "CAN 总线两端的终端电阻", "kind": "buy" },
+        { "name": "4.7 kΩ 与 2.2 kΩ 电阻", "spec": "I2C 上拉，两种阻值各若干", "kind": "buy" },
+        { "name": "杜邦线、双绞线", "spec": "差分总线用双绞线，不要用普通散线", "kind": "buy" },
+        { "name": "逻辑分析仪", "spec": "抓 UART / I2C / SPI 时序，实验室通常有", "kind": "optional" }
       ]
     },
     {
@@ -78,7 +76,7 @@
       "title": "通信整合",
       "items": [
         { "name": "电位器或模拟传感器", "spec": "ADC 输入源", "kind": "buy" },
-        { "name": "USB 转串口模块", "spec": "CH340 / CP2102 都行", "kind": "buy" },
+        { "name": "USB 转串口模块", "spec": "第 3 周已买，这里不必重复下单", "kind": "buy" },
         { "name": "待联调的下位机模块", "spec": "按你的演示方案选", "kind": "buy", "byDesign": true },
         { "name": "示波器 / 逻辑分析仪", "spec": "实验室通常有", "kind": "optional" }
       ]

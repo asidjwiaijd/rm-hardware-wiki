@@ -12,7 +12,10 @@
         { "name": "TI 电池管理", "url": "https://www.ti.com/power-management/battery-management/overview.html", "purpose": "充电管理芯片", "tags": ["电源", "充电"] },
         { "name": "TI DC-DC 转换器", "url": "https://www.ti.com/power-management/dcdc-converters/overview.html", "purpose": "BUCK / BOOST 选型", "tags": ["电源", "BUCK", "BOOST"] },
         { "name": "TI LDO 线性稳压器", "url": "https://www.ti.com/power-management/linear-regulators-ldo/overview.html", "purpose": "LDO 选型", "tags": ["电源", "LDO"] },
-        { "name": "TI 线性稳压器基础知识（zhca563）", "url": "https://www.ti.com.cn/cn/lit/an/zhca563/zhca563.pdf", "purpose": "LDO 环路补偿、ESR 零点与伯德图", "tags": ["电源", "LDO"] }
+        { "name": "TI 线性稳压器基础知识（zhca563）", "url": "https://www.ti.com.cn/cn/lit/an/zhca563/zhca563.pdf", "purpose": "LDO 环路补偿、ESR 零点与伯德图", "tags": ["电源", "LDO"] },
+        { "name": "TI I2C 基础指南（sbaa565）", "url": "https://www.ti.com.cn/cn/lit/an/sbaa565/sbaa565.pdf", "purpose": "I2C 时序、上拉电阻与总线电容", "tags": ["通信", "I2C"] },
+        { "name": "TI 了解 SPI 总线（zhcafo7）", "url": "https://www.ti.com.cn/cn/lit/ab/zhcafo7/zhcafo7.pdf", "purpose": "SPI 四种模式、片选与菊花链", "tags": ["通信", "SPI"] },
+        { "name": "TI 接口电路设计指南（slyt677）", "url": "https://www.ti.com.cn/lit/sg/slyt677/slyt677.pdf", "purpose": "RS-485 / CAN 等接口的保护与终端设计", "tags": ["通信", "差分"] }
       ]
     },
     {

@@ -121,7 +121,13 @@ export default postProcessSidebar(
           excludeByGlobPattern: ['about/**', 'part_*.md'],
           collapsed: false,
           collapseDepth: 2,
-          manualSortFileNameByPriority: ['intro.md', 'schedule.md', 'how2learn.md', 'howtoask.md', 'training'],
+          manualSortFileNameByPriority: [
+            'intro.md',
+            'schedule.md',
+            'how2learn.md',
+            'howtoask.md',
+            'training',
+          ],
         },
         {
           documentRootPath: 'docs',

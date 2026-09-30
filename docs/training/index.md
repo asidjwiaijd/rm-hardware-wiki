@@ -55,6 +55,8 @@ flowchart LR
 - [讲义 · 硬件导论](/training/note1) —— 第一讲的完整讲义，含元器件与 PCB 工艺
 - [第 2 周 · 典型电路、仿真与 PCB](/training/week2) —— 运放、三极管与线性稳压器实战
 - [讲义 · 原理图与 PCB 综合实战](/training/note2) —— 第二讲的完整讲义，以线性稳压器为模型
+- [第 3 周 · 有线通信协议](/training/week3) —— UART、I2C、SPI、CAN 的硬件要点与排查顺序
+- [讲义 · 有线通信协议](/training/note3) —— 第三讲的完整讲义，从电平讲到终端匹配
 - [环境配置指引](/environment/) —— 第一周的主要工作量
 - [物料总清单](/resources/bom) —— 七周采购汇总，可以一次性下单
 - [视频入口](/resources/videos) —— 全部六讲的链接

@@ -1,5 +1,5 @@
 ---
-order: 17
+order: 18
 title: 第 5 周 · 最小系统板与外设入门
 level: 进阶
 exclude: true
