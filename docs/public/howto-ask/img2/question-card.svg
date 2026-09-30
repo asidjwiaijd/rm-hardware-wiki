@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
+  <rect width="640" height="360" rx="16" fill="#f6f8fc"/>
+  <text x="320" y="64" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="bold" fill="#1f2937">提问之前，先过一遍</text>
+  <g font-family="sans-serif" font-size="22" fill="#374151">
+    <rect x="70" y="100" width="500" height="44" rx="8" fill="#ffffff" stroke="#d1d5db"/>
+    <text x="95" y="128">① 自己搜过吗？搜索引擎 / 文档 / 社区</text>
+    <rect x="70" y="156" width="500" height="44" rx="8" fill="#ffffff" stroke="#d1d5db"/>
+    <text x="95" y="184">② 自己测试 / 复现过了吗？</text>
+    <rect x="70" y="212" width="500" height="44" rx="8" fill="#ffffff" stroke="#d1d5db"/>
+    <text x="95" y="240">③ 准备描述：做了什么 → 看到什么 → 期望什么</text>
+    <rect x="70" y="268" width="500" height="44" rx="8" fill="#ffffff" stroke="#d1d5db"/>
+    <text x="95" y="296">④ 直接说要什么帮助，别只说"在吗"</text>
+  </g>
+  <text x="320" y="344" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#6b7280">基于《How-To-Ask-Questions》制作</text>
+</svg>
