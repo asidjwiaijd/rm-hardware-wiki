@@ -1,5 +1,5 @@
 ---
-order: 9
+order: 30
 title: 资源与清单
 ---
 
