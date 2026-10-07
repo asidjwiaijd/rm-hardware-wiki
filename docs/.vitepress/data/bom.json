@@ -46,8 +46,10 @@
     },
     {
       "week": 4,
-      "title": "焊接与调试",
+      "title": "STM32 与焊接调试",
       "items": [
+        { "name": "100 nF 去耦电容", "spec": "每对 VDD/VSS 一颗，另配 4.7~10 µF 储能电容", "kind": "buy" },
+        { "name": "磁珠", "spec": "VDDA 的模拟电源分离，配 100 nF 与 1 µF", "kind": "buy" },
         { "name": "焊锡丝", "spec": "含铅的更好焊，注意通风", "kind": "buy" },
         { "name": "助焊剂", "spec": "松香或免洗助焊剂", "kind": "buy" },
         { "name": "吸锡带", "spec": "拆错件、清多余锡", "kind": "buy" },

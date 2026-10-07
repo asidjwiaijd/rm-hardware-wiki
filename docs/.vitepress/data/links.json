@@ -8,6 +8,7 @@
         { "name": "STM32F103C8 产品页", "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32f103c8.html", "purpose": "数据手册、参考手册、勘误表", "tags": ["STM32", "数据手册"] },
         { "name": "STM32Cube MCU Packages", "url": "https://www.st.com/en/embedded-software/stm32cube-mcu-packages.html", "purpose": "HAL 库与示例工程", "tags": ["STM32", "HAL"] },
         { "name": "STM32CubeIDE", "url": "https://www.st.com/en/development-tools/stm32cubeide.html", "purpose": "ST 官方 IDE", "tags": ["STM32", "IDE"] },
+        { "name": "AN2586 STM32F10xxx 硬件开发指南", "url": "https://shequ.stmicroelectronics.cn/thread-620346-1-1.html", "purpose": "最小系统的供电、时钟、复位与启动配置", "tags": ["STM32", "应用笔记"] },
         { "name": "TI 运算放大器", "url": "https://www.ti.com/amplifier-circuit/op-amps/overview.html", "purpose": "运放选型与应用笔记", "tags": ["运放", "选型"] },
         { "name": "TI 电池管理", "url": "https://www.ti.com/power-management/battery-management/overview.html", "purpose": "充电管理芯片", "tags": ["电源", "充电"] },
         { "name": "TI DC-DC 转换器", "url": "https://www.ti.com/power-management/dcdc-converters/overview.html", "purpose": "BUCK / BOOST 选型", "tags": ["电源", "BUCK", "BOOST"] },

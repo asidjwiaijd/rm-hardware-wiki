@@ -2,6 +2,7 @@
 order: 52
 title: 物料总清单
 level: 入门
+exclude: true
 ---
 
 # 物料总清单

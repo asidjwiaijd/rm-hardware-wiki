@@ -1,6 +1,6 @@
 {
   "$schema": "./schedule.schema.json",
-  "season": "2027 秋季招新 · 第一个月",
+  "season": "2027 秋季招新",
   "weeks": [
     {
       "week": 1,
@@ -48,17 +48,16 @@
     },
     {
       "week": 4,
-      "title": "STM32、焊接与验证",
+      "title": "STM32 系统板与焊接",
       "start": "2026-10-12",
       "end": "2026-10-18",
       "href": "/training/week4",
-      "focus": "开始进入单片机实际开发，并把第二、三周的板子真正焊出来、跑起来。",
-      "lectures": ["第三讲", "第四讲"],
+      "focus": "认全最小系统的五件事——供电、时钟、复位、启动配置、下载调试——用 CubeMX 按需求把外设配出来，再把前几周打样的板子焊出来验证。",
+      "lectures": ["第四讲"],
       "highlights": [
-        "搭建 STM32 HAL 开发环境",
-        "点亮 LED 并尝试流水灯",
-        "了解 UART / IIC / SPI / CAN",
-        "完成焊接验证"
+        "用 CubeMX 建工程并把时钟树配到 72 MHz",
+        "GPIO 点灯、定时器中断与 EXTI 按键",
+        "分清 GPIO 的八种模式与引脚复用"
       ]
     },
     {

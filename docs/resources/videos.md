@@ -2,6 +2,7 @@
 order: 51
 title: 视频入口
 level: 入门
+exclude: true
 ---
 
 # 视频入口

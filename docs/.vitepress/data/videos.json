@@ -23,8 +23,7 @@
       "no": 3,
       "title": "有线通信协议",
       "weeks": [
-        3,
-        4
+        3
       ],
       "url": "https://search.bilibili.com/all?keyword=%E7%A1%AC%E4%BB%B6%E7%BB%84%E7%AC%AC%E4%B8%89%E8%AE%B2%EF%BC%9A%E6%9C%89%E7%BA%BF%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE",
       "linkText": "B 站搜索直达",
@@ -81,7 +80,7 @@
     },
     {
       "week": 4,
-      "title": "焊接与通信"
+      "title": "STM32 与焊接"
     },
     {
       "week": 5,
