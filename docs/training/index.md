@@ -59,4 +59,6 @@ flowchart LR
 - [讲义 · 有线通信协议](/training/note3) —— 第三讲的完整讲义，从电平讲到终端匹配
 - [第 4 周 · STM32 系统板与焊接](/training/week4) —— 最小系统五件事、CubeMX 配置与焊接验证
 - [讲义 · 嵌入式系统与 STM32 系统板](/training/note4) —— 第四讲的完整讲义，含 GPIO、定时器与最小系统板
+- [第 5 周 · 开关电源与 Buck 变换器](/training/week5) —— 电源树、Buck 器件选型与 TPS5450 设计实例
+- [讲义 · 开关电源与 Buck 变换器](/training/note5) —— 第五讲的完整讲义，含布局、散热与上电调试
 - [环境配置指引](/environment/) —— 第一周的主要工作量
