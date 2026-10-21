@@ -15,10 +15,10 @@
   },
   "devDependencies": {
     "@lint-md/cli": "^2.3.1",
-    "@types/node": "^26.2.0",
+    "@types/node": "^26.6.2",
     "@types/remove-markdown": "^0.3.4",
     "husky": "^9.1.7",
-    "prettier": "^3.9.6",
+    "prettier": "^3.9.8",
     "typescript": "^5.9.3"
   },
   "dependencies": {
@@ -34,7 +34,7 @@
     "@nolebase/vitepress-plugin-page-properties": "^2.18.2",
     "@waline/client": "^3.15.2",
     "esbuild": "^0.28.2",
-    "markdownlint-cli2": "^0.23.2",
+    "markdownlint-cli2": "^0.23.3",
     "medium-zoom": "^1.1.0",
     "nprogress-v2": "^1.1.10",
     "octokit": "^5.0.5",
@@ -45,10 +45,10 @@
     "vitepress-markdown-timeline": "^1.2.2",
     "vitepress-mermaid-renderer": "^1.2.2",
     "vitepress-plugin-back-to-top": "^1.0.1",
-    "vitepress-plugin-pagefind": "^0.4.24",
+    "vitepress-plugin-pagefind": "^0.4.25",
     "vitepress-plugin-tabs": "^0.9.1",
     "vitepress-sidebar": "^1.40.0",
-    "vue": "^3.5.42"
+    "vue": "^3.5.43"
   },
   "allowScripts": {
     "esbuild@0.21.5": true
