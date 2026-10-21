@@ -217,7 +217,7 @@ function getHead() {
       'link',
       {
         rel: 'stylesheet',
-        href: 'https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css',
+        href: 'https://cdn.jsdelivr.net/npm/katex@0.18.7/dist/katex.min.css',
         crossorigin: 'anonymous',
       },
     ],
